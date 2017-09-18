@@ -1,0 +1,247 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+:: Template Name: One - One Page Parallax
+:: Author: Designing World
+:: Author URL: https://themeforest.net/user/designing-world
+:: Version: 1.0.0
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.floatleft {
+    float: left
+}
+
+.floatright {
+    float: right
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Place your custom css code here */
+
+.footer_widget {
+    background: url(img/footerbg.jpg) no-repeat top center;
+    color: #fff !important;
+    background-size: cover;
+}
+
+.main_widget *{
+    font-size: 12.25px;
+}
+
+
+.footer_widget .main_widget {
+    padding: 55px 15px 80px 15px;
+    overflow: hidden;
+}
+
+.single_widget {
+    margin-bottom: 30px;
+}
+
+.single_widget ul li {
+    margin-bottom: 10px;
+}
+
+.single_widget ul li a {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    font-size: 0.875rem;
+    color: #fff;
+    line-height: 1.4rem;
+}
+
+.single_widget ul li a i {
+    width: 8%;
+    margin-right: 2%;
+    float: left;
+    color: #fff;
+    font-size: 1rem;
+    padding: 2px;
+}
+
+.single_widget ul li a span {
+    width: 90%;
+    float: left;
+}
+
+.footer_logo {
+    margin-bottom: 20px;
+}
+
+.single_widget li.single_latest_news {
+    margin-bottom: 20px;
+}
+
+.footer_subcribs_area .navbar-form {
+    padding: 0;
+}
+
+.footer_subcribs_area .form-control {
+    font-size: 14px;
+    border: 1px solid #a199b4;
+    color: #a199b4;
+    border-radius: 0px;
+    width: 70%;
+    display: inline-block;
+    height: 45px;
+    background-color: transparent;
+    line-height: 20px;
+}
+
+.footer_subcribs_area .submit_btn {
+    background: #a099b4;
+    border: 0px solid #ccc;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 0px;
+    height: 45px;
+    outline: none;
+    width: 25%;
+    transition: all .6s;
+    margin-left: 5px;
+}
+
+.footer_subcribs_area .submit_btn:hover {
+    background: #fff;
+    color: #47366d;
+}
+
+.footer_subcribs_area .submit_btn:before {
+    content: "\f1d9";
+    font-family: 'Fontawesome';
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footer_subcribs_area .flowus {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.footer_subcribs_area .flowus a i {
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.footer_subcribs_area .flowus a i:hover {
+    color: #6feee5;
+    border: 1px solid #6feee5;
+}
+
+/*footer section*/
+
+.main_footer .right_menu {
+    padding: 40px 0px;
+}
+
+.main_footer .right_menu li a {
+    color: #fff;
+}
+
+.copyright_text p {
+    color: #fff;
+    line-height: 25px;
+    padding: 40px;
+    max-width: 100%;
+}
+
+.copyright_text p i {
+    padding: 0px 10px;
+    color: #ff0000;
+}
+
+.copyright_text p a {
+    padding: 0px 10px;
+    color: #3bd3ba;
+}
+
+#footer h4 {
+    font-size: 12.25px;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+#footer p {
+
+    color: rgb(255, 255, 255);
+    direction: ltr;
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-size: 12.25px;
+    font-weight: 300;
+    height: 95px;
+    line-height: 19.25px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-size-adjust: 100%;
+    visibility: visible;
+    width: 284.984px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+}
+
+
+.copyright_text p {
+    padding: 40px 0 0!important;
+    margin: 0!important;
+    width: 100%!important;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    direction: ltr;
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-size: 12.25px;
+    font-weight: 300;
+    height: 105px;
+    line-height: 25px;
+    max-width: 100%;
+    text-align: center;
+    text-size-adjust: 100%;
+    visibility: visible;
+    -webkit-margin-after: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+#logo{
+    max-width:45%;
+}
