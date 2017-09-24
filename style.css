@@ -96,8 +96,8 @@
 
 .footer_subcribs_area .form-control {
     font-size: 14px;
-    border: 1px solid #a199b4;
-    color: #a199b4;
+    border: 1px solid #093f74;
+    color: #FFFFFF;
     border-radius: 0px;
     width: 70%;
     display: inline-block;
@@ -107,8 +107,8 @@
 }
 
 .footer_subcribs_area .submit_btn {
-    background: #a099b4;
-    border: 0px solid #ccc;
+    background: #093f74;
+    border: 0px solid  color: #FFFFFF;;
     color: #333;
     padding: 5px 10px;
     border-radius: 0px;
