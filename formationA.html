@@ -31,7 +31,75 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+        .content {
 
+        }
+
+        .content .content-overlay {
+            background: rgba(0,0,0,0.7);
+            position: absolute;
+            height: 99%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
+        }
+
+        .content:hover .content-overlay{
+            opacity: 1;
+        }
+
+        .content-image{
+            width: 100%;
+        }
+
+        .content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .content:hover .content-details{
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+        }
+
+        .content-details h3{
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+        }
+
+        .content-details p{
+            color: #fff;
+            font-size: 0.8em;
+        }
+
+        .fadeIn-left{
+            left: 20%;
+        }
+    </style>
 </head>
 
 <body>
@@ -63,12 +131,17 @@
                         <div class="mainmenu">
                             <nav>
                                 <ul id="nav">
-                                    <li class="current_page_item"><a href="#home">Home</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#work">Works</a></li>
-                                    <li><a href="#price">Price</a></li>
-                                    <li><a href="#blog">News</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    <li class="current_page_item"><a href="#home">ACCUEIL</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">A propos <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#advisor">COURS</a></li>
+                                    <li><a href="#price">EVENEMENTS</a></li>
+                                    <li><a href="#blog">MEMBRES</a></li>
+                                    <li><a href="#contact">CONTACT</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -76,7 +149,8 @@
                 </div>
             </div>
         </div>
-    </div>
+      </div>
+
 </header>
 <!-- >>>>>>>>>>>>>>>> Header End <<<<<<<<<<<<<<<< -->
 
@@ -126,60 +200,142 @@
 
                     <div align="center">
                        <!-- <button class="btn btn-default filter-button" data-filter="all">Toutes</button>-->
-                        <button class="btn btn-default filter-button" data-filter="hdpe">Formation de base</button>
-                        <button class="btn btn-default filter-button" data-filter="sprinkle">Formation supplémentaire</button>
-                        <button class="btn btn-default filter-button" data-filter="spray">Qualif</button>
+                        <button class="btn btn-outline-secondary filter-button" data-filter="hdpe" style="display: inline-block;  background-color: Transparent; outline:none;">Formation de base</button>
+                        <button class="btn btn-outline-secondary filter-button" data-filter="sprinkle" style="display: inline-block; background-color: Transparent; outline:none;">Formation supplémentaire</button>
+                        <button class="btn btn-outline-secondary filter-button" data-filter="spray" style="display: inline-block; background-color: Transparent; outline:none;">Qualif</button>
                        <!-- <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>-->                    </div>
                     <br/>
 
-
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                        <img src="img/formation/1.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/1.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>ATPL intégré : Airline Transport Pilot License</h3>
+                                <p>La licence de pilote de ligne, ou Airline Transport</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                        <img src="img/formation/11.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/11.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>COMPLEMENT DE FORMATION ATPL, CPL, IR</h3>
+                                <p>Une formation qui n’est pas « intégrée »</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                        <img src="img/formation/2.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/2.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>PPL : Private Pilot Licence</h3>
+                                <p>Cette licence (Private Pilot Licence, ou PPL) permet d’exercer</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                        <img src="img/formation/12.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/12.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>MAINTIEN DE COMPETENCE</h3>
+                                <p>En mettant l’expérience de ses instructeurs entre vos mains</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                        <img src="img/formation/111.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter spray">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/111.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>QUALIF DE CLASSE (QC)</h3>
+                                <p>Le titulaire d’une licence de pilote d’avion ne doit</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                        <img src="img/formation/13.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/13.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>VOL DE MÛRISSEMENT (TIME BUILDING)</h3>
+                                <p>Le time building est une passerelle idéale pour une</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                        <img src="img/formation/111.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter spray">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/111.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>QUALIF INSTRUCTEUR (FI, IRI, CRI)</h3>
+                                <p>En Tunisie être instructeur prévoit une qualification à part </p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                        <img src="img/formation/14.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/14.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>PROROGATION ET RENOUVELLEMENT DES LICENCES</h3>
+                                <p>Mediterranean Flight School s’occupe de vos Prorogations ou Renouvellements de vos Licences de</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                        <img src="img/formation/3.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/3.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>CPL : Commercial Pilot License</h3>
+                                <p>La licence de pilote commercial (Commercial Pilot License CPL)</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                        <img src="img/formation/111.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter spray">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/111.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>QUALIFICATION TYPE (QT)</h3>
+                                <p>Une qualification de type d’avion est établie pour :</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                        <img src="img/formation/15.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/15.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>MULTI CREW COORDINATION (MCC)</h3>
+                                <p>La formation au travail en équipage est dispensée dans</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                        <img src="img/formation/4.jpg" class="img-responsive">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/4.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>IR : Instrument Rating</h3>
+                                <p>Cette formation prépare aux techniques du vol sans visibilité,</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
