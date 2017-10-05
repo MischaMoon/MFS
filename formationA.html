@@ -100,9 +100,15 @@
             left: 20%;
         }
     </style>
+    <link rel="stylesheet" type="text/css" href="menu.css"/>
+    <script type="application/javascript" src="menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="menu-skin/skin.css"/>
+    <link rel="stylesheet" type="text/css" href="icon/icon.css"/>
+    <link rel="stylesheet" type="text/css" href="main/main.css"/>
 </head>
 
-<body>
+<body class="wrapper" style="
+    margin-top: 0px;">
 <!-- Preloader Start -->
 <div id="preloader">
     <div class="pre-loader">
@@ -129,21 +135,65 @@
                 <div class="col-sm-10 col-xs-12">
                     <div class="main_menu_area">
                         <div class="mainmenu">
-                            <nav>
-                                <ul id="nav">
-                                    <li class="current_page_item"><a href="#home">ACCUEIL</a></li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">A propos <b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#advisor">COURS</a></li>
-                                    <li><a href="#price">EVENEMENTS</a></li>
-                                    <li><a href="#blog">MEMBRES</a></li>
-                                    <li><a href="#contact">CONTACT</a></li>
-                                </ul>
-                            </nav>
+                            <ul class="Menu -horizontal">
+                                <li><a href="#">Accueil</a></li>
+                                <li class="-hasSubmenu">
+                                    <a href="#">A propos</a>
+                                    <ul>
+                                        <li><a href="#">Bacon</a></li>
+                                        <li><a href="#">Ipsum</a></li>
+                                        <li class="-hasSubmenu">
+                                            <a href="#">Sub-menu</a>
+                                            <ul>
+                                                <li><a href="#">Bacon</a></li>
+                                                <li><a href="#">Ipsum</a></li>
+                                                <li><a href="#">Dolor</a></li>
+                                                <li><a href="#">Amet</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Cours</a></li>
+                                        <li><a href="#">Evenements</a></li>
+                                        <li class="-hasSubmenu">
+                                            <a href="#">Another Sub-menu</a>
+                                            <ul>
+                                                <li><a href="#">Bacon</a></li>
+                                                <li><a href="#">Ipsum</a></li>
+                                                <li class="-hasSubmenu">
+                                                    <a href="#">Sub-sub-menu!</a>
+                                                    <ul>
+                                                        <li><a href="#">Bacon</a></li>
+                                                        <li><a href="#">Ipsum</a></li>
+                                                        <li><a href="#">Dolor</a></li>
+                                                        <li><a href="#">Amet</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Membre</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="-hasSubmenu">
+                                    <a href="#">Gamma</a>
+                                    <ul>
+                                        <li><a href="#" data-icon="">Ipsum</a></li>
+                                        <li class="-hasSubmenu">
+                                            <a data-icon="cast" href="#">Dolorsssssssssssssssssssssssss</a>
+                                            <ul>
+                                                <li><a href="#">Bacon</a></li>
+                                                <li><a href="#">Ipsum</a></li>
+                                                <li><a href="#">Dolor</a></li>
+                                                <li><a href="#">Amet</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#" data-icon="">Amet</a></li>
+                                        <li><a href="#" data-icon="cake">Tail pork loin chicken</a></li>
+                                        <li><a href="#" data-icon="">Bacon ipsum dolor amet pork loin rump filet mignon swine</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Membres</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
