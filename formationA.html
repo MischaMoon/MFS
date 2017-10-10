@@ -31,10 +31,84 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+        .content {
 
+        }
+
+        .content .content-overlay {
+            background: rgba(0,0,0,0.7);
+            position: absolute;
+            height: 99%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
+        }
+
+        .content:hover .content-overlay{
+            opacity: 1;
+        }
+
+        .content-image{
+            width: 100%;
+        }
+
+        .content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .content:hover .content-details{
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+        }
+
+        .content-details h3{
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+        }
+
+        .content-details p{
+            color: #fff;
+            font-size: 0.8em;
+        }
+
+        .fadeIn-left{
+            left: 20%;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="menu.css"/>
+    <script type="application/javascript" src="menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="menu-skin/skin.css"/>
+    <link rel="stylesheet" type="text/css" href="icon/icon.css"/>
+    <link rel="stylesheet" type="text/css" href="main/main.css"/>
 </head>
 
-<body>
+<body class="wrapper" style="
+    margin-top: 0px;">
 <!-- Preloader Start -->
 <div id="preloader">
     <div class="pre-loader">
@@ -61,22 +135,72 @@
                 <div class="col-sm-10 col-xs-12">
                     <div class="main_menu_area">
                         <div class="mainmenu">
-                            <nav>
-                                <ul id="nav">
-                                    <li class="current_page_item"><a href="#home">Home</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#work">Works</a></li>
-                                    <li><a href="#price">Price</a></li>
-                                    <li><a href="#blog">News</a></li>
-                                    <li><a href="#contact">Contact</a></li>
-                                </ul>
-                            </nav>
+                            <ul class="Menu -horizontal">
+                                <li><a href="#">Accueil</a></li>
+                                <li class="-hasSubmenu">
+                                    <a href="#">A propos</a>
+                                    <ul>
+                                        <li><a href="#">Bacon</a></li>
+                                        <li><a href="#">Ipsum</a></li>
+                                        <li class="-hasSubmenu">
+                                            <a href="#">Sub-menu</a>
+                                            <ul>
+                                                <li><a href="#">Bacon</a></li>
+                                                <li><a href="#">Ipsum</a></li>
+                                                <li><a href="#">Dolor</a></li>
+                                                <li><a href="#">Amet</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Cours</a></li>
+                                        <li><a href="#">Evenements</a></li>
+                                        <li class="-hasSubmenu">
+                                            <a href="#">Another Sub-menu</a>
+                                            <ul>
+                                                <li><a href="#">Bacon</a></li>
+                                                <li><a href="#">Ipsum</a></li>
+                                                <li class="-hasSubmenu">
+                                                    <a href="#">Sub-sub-menu!</a>
+                                                    <ul>
+                                                        <li><a href="#">Bacon</a></li>
+                                                        <li><a href="#">Ipsum</a></li>
+                                                        <li><a href="#">Dolor</a></li>
+                                                        <li><a href="#">Amet</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Membre</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="-hasSubmenu">
+                                    <a href="#">Gamma</a>
+                                    <ul>
+                                        <li><a href="#" data-icon="">Ipsum</a></li>
+                                        <li class="-hasSubmenu">
+                                            <a data-icon="cast" href="#">Dolorsssssssssssssssssssssssss</a>
+                                            <ul>
+                                                <li><a href="#">Bacon</a></li>
+                                                <li><a href="#">Ipsum</a></li>
+                                                <li><a href="#">Dolor</a></li>
+                                                <li><a href="#">Amet</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#" data-icon="">Amet</a></li>
+                                        <li><a href="#" data-icon="cake">Tail pork loin chicken</a></li>
+                                        <li><a href="#" data-icon="">Bacon ipsum dolor amet pork loin rump filet mignon swine</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Membres</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+      </div>
+
 </header>
 <!-- >>>>>>>>>>>>>>>> Header End <<<<<<<<<<<<<<<< -->
 
@@ -118,194 +242,189 @@
         <div class="row">
 
             <!-- single latest news area start -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="single_latest_news_area box-shadow-with-bg-gray wow fadeInUp item">
-                    <!-- single latest news thumb -->
-                    <div class="single_latest_news_img_area">
-                        <img src="img/bg-img/agency-1.jpg" alt="">
-                        <!-- single latest news published date -->
+            <div class="container">
+                <div class="row">
+                    <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="gallery-title">Formation pilote</h1>
                     </div>
-                    <div class="single_latest_news_text_area">
 
-                        <!-- single latest news title -->
-                        <div class="news_title">
-                            <a href="single-blog-with-right-sb.html">
-                                <h4>ATPL intégré </h4>
-                            </a>
-                        </div>
-                        <!-- single latest news excerp -->
-                        <div class="news_content">
-                            <p>Airline Transport Pilot License.</p>
-                            <a href="single-blog-with-left-sb.html">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                        </div>
+                    <div align="center">
+                       <!-- <button class="btn btn-default filter-button" data-filter="all">Toutes</button>-->
+                        <button class="btn btn-outline-secondary filter-button" data-filter="hdpe" style="display: inline-block;  background-color: Transparent; outline:none;">Formation de base</button>
+                        <button class="btn btn-outline-secondary filter-button" data-filter="sprinkle" style="display: inline-block; background-color: Transparent; outline:none;">Formation supplémentaire</button>
+                        <button class="btn btn-outline-secondary filter-button" data-filter="spray" style="display: inline-block; background-color: Transparent; outline:none;">Qualif</button>
+                       <!-- <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>-->                    </div>
+                    <br/>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/1.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>ATPL intégré : Airline Transport Pilot License</h3>
+                                <p>La licence de pilote de ligne, ou Airline Transport</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/11.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>COMPLEMENT DE FORMATION ATPL, CPL, IR</h3>
+                                <p>Une formation qui n’est pas « intégrée »</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/2.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>PPL : Private Pilot Licence</h3>
+                                <p>Cette licence (Private Pilot Licence, ou PPL) permet d’exercer</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/12.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>MAINTIEN DE COMPETENCE</h3>
+                                <p>En mettant l’expérience de ses instructeurs entre vos mains</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter spray">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/111.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>QUALIF DE CLASSE (QC)</h3>
+                                <p>Le titulaire d’une licence de pilote d’avion ne doit</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/13.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>VOL DE MÛRISSEMENT (TIME BUILDING)</h3>
+                                <p>Le time building est une passerelle idéale pour une</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter spray">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/111.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>QUALIF INSTRUCTEUR (FI, IRI, CRI)</h3>
+                                <p>En Tunisie être instructeur prévoit une qualification à part </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/14.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>PROROGATION ET RENOUVELLEMENT DES LICENCES</h3>
+                                <p>Mediterranean Flight School s’occupe de vos Prorogations ou Renouvellements de vos Licences de</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/3.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>CPL : Commercial Pilot License</h3>
+                                <p>La licence de pilote commercial (Commercial Pilot License CPL)</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter spray">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/111.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>QUALIFICATION TYPE (QT)</h3>
+                                <p>Une qualification de type d’avion est établie pour :</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/15.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>MULTI CREW COORDINATION (MCC)</h3>
+                                <p>La formation au travail en équipage est dispensée dans</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
+                        <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="content-image" src="img/formation/4.jpg" style="height: 50%">
+                            <div class="content-details fadeIn-left">
+                                <h3>IR : Instrument Rating</h3>
+                                <p>Cette formation prépare aux techniques du vol sans visibilité,</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- single latest news area start -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="single_latest_news_area box-shadow-with-bg-gray wow fadeInUp item">
-                    <!-- single latest news thumb -->
-                    <div class="single_latest_news_img_area">
-                        <img src="img/bg-img/agency-2.jpg" alt="">
-                        <!-- single latest news published date -->
-                    </div>
-                    <div class="single_latest_news_text_area">
-
-                        <div class="news_title">
-                            <a href="single-blog-with-right-sb.html">
-                                <h4>PPL.</h4>
-                            </a>
-                        </div>
-                        <!-- single latest news excerp -->
-                        <div class="news_content">
-                            <p> Private Pilot Licence</p>
-                            <a href="single-blog-with-right-sb.html">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- single latest news area start -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="single_latest_news_area box-shadow-with-bg-gray wow fadeInUp item">
-                    <!-- single latest news thumb -->
-                    <div class="single_latest_news_img_area">
-                        <img src="img/news-img/blog-3.jpg" alt="">
-                        <!-- single latest news published date -->
-                    </div>
-                    <div class="single_latest_news_text_area">
-
-                        <!-- single latest news title -->
-                        <div class="news_title">
-                            <a href="single-blog-with-right-sb.html">
-                                <h4>CPL</h4>
-                            </a>
-                        </div>
-                        <!-- single latest news excerp -->
-                        <div class="news_content">
-                            <p>Commercial Pilot License</p>
-                            <a href="single-blog-with-right-sb.html">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h4>Formation Supplémentaire</h4>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="single_latest_news_area box-shadow-with-bg-gray wow fadeInUp item">
-                    <!-- single latest news thumb -->
-                    <div class="single_latest_news_img_area">
-                        <img src="img/bg-img/agency-1.jpg" alt="">
-                        <!-- single latest news published date -->
-                    </div>
-                    <div class="single_latest_news_text_area">
-
-                        <!-- single latest news title -->
-                        <div class="news_title">
-                            <a href="single-blog-with-right-sb.html">
-                                <h4>ATPL intégré </h4>
-                            </a>
-                        </div>
-                        <!-- single latest news excerp -->
-                        <div class="news_content">
-                            <p>Airline Transport Pilot License.</p>
-                            <a href="single-blog-with-left-sb.html">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
-        </div>
+
+</div>
     </div>
 </section>
 <!-- >>>>>>>>>>>>>>>> End Single Blog Post Area <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> Footer Area Start <<<<<<<<<<<<<<<< -->
-<section id="footer" class="footer_widget">
-    <div class="video_overlay">
+<footer class="footer_area inline-style">
+    <!-- Bottom Footer Area Start -->
+    <div class="footer_bottom_area">
         <div class="container">
             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <div class="row">
-                        <div class="main_widget">
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="single_widget wow fadeIn" data-wow-duration="800ms">
-                                    <div class="footer_logo">
-                                        <img src="img/logo.png" alt="" id="logo"/>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                        nisi ut aliquip ex ea commodo consequat. </p>
-
-
-
-                                </div>
-                            </div>
-
-                            <div class="col-sm-4  col-xs-12">
-                                <div class="single_widget wow fadeIn" data-wow-duration="800ms">
-                                    <h4>OUR STUDIO</h4>
-                                    <ul>
-                                        <li><a href="#">
-                                            <i class="fa fa-map-marker"></i>
-                                            <span>Ruko cucruk, Jl. Radio luar dalem jos <br />
-                                                                No.12 - 13, Kalideres - Jakarta Barat <br />
-                                                                11480 - Indonesia</span>
-                                        </a></li>
-                                        <li><a href="#"><i class="fa fa-phone"></i> 0123 456 789 0112</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="single_widget wow fadeIn" data-wow-duration="800ms">
-                                    <h4>STAY IN TOUCH</h4>
-
-                                    <div class="footer_subcribs_area">
-                                        <form class="navbar-form navbar-left" role="search">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Search">
-                                                <button type="submit" class="submit_btn"></button>
-                                            </div>
-
-                                        </form>
-                                        <div class="flowus">
-                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                            <a href="#"><i class="fa fa-instagram"></i></a>
-                                            <a href="#"><i class="fa fa-youtube"></i></a>
-                                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-xs-12">
+            <div class="social_links_area">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> | Facebook</a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> | Twitter</a>
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> | Google Plus</a>
+                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i> | Dribbble</a>
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> | Pinterest</a>
+            </div>
+        </div>
+        </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="footer_bottom">
+                        <p>Made with <i class="fa fa-heart"></i> by <a href="https://themeforest.net/user/designing-world/portfolio?ref=designing-world">DesigningWorld</a></p>
                     </div>
-                    <div class="main_footer text-center">
-                        <div class="row">
-                            <div class="col-sm-6 col-xs-12">
-                                <ul class="right_menu list-inline">
-                                    <li><a href="#">HELP</a></li>
-                                    <li><a href="#">TERMS & CONDITION</a></li>
-                                    <li><a href="#">PRIVACY</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6 col-xs-12">
-                                <div class="copyright_text">
-                                    <p class=" wow fadeInRight" data-wow-duration="1s">Made with <i class="fa fa-heart"></i> by <a href="http://bootstrapthemes.co/">Bootstrap Themes</a>2016. All Rights Reserved</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Bottom Footer Copywrite Text Area End -->
                 </div>
             </div>
         </div>
     </div>
-</section>
+</footer>
 <!-- >>>>>>>>>>>>>>>> Footer Area End <<<<<<<<<<<<<<<< -->
 
 <!-- >>>>>>>>>>>>>>>> All jQuery Plugins <<<<<<<<<<<<<<<< -->
@@ -318,7 +437,7 @@
 <script src="js/plugins.js"></script>
 <!-- Active js -->
 <script src="js/active.js"></script>
-
+<script src="js/formation.js"></script>
 </body>
 
 
