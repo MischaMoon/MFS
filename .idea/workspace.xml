@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="040da1db-1367-48ed-9ffa-ff5c3f728707" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/calendar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/footerbg.jpg" afterPath="$PROJECT_DIR$/img/footerbg.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anglais.html" afterPath="$PROJECT_DIR$/anglais.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atpl.html" afterPath="$PROJECT_DIR$/atpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/charte.html" afterPath="$PROJECT_DIR$/charte.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/complementFormaton.html" afterPath="$PROJECT_DIR$/complementFormaton.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpl.html" afterPath="$PROJECT_DIR$/cpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formationA.html" afterPath="$PROJECT_DIR$/formationA.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-agency.html" afterPath="$PROJECT_DIR$/index-agency.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ir.html" afterPath="$PROJECT_DIR$/ir.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maintenance.html" afterPath="$PROJECT_DIR$/maintenance.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mcc.html" afterPath="$PROJECT_DIR$/mcc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meteorologue.html" afterPath="$PROJECT_DIR$/meteorologue.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moyens.html" afterPath="$PROJECT_DIR$/moyens.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navgationAr.html" afterPath="$PROJECT_DIR$/navgationAr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/politique.html" afterPath="$PROJECT_DIR$/politique.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ppl.html" afterPath="$PROJECT_DIR$/ppl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/propagationRenv.html" afterPath="$PROJECT_DIR$/propagationRenv.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recyclage.html" afterPath="$PROJECT_DIR$/recyclage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timeBuilding.html" afterPath="$PROJECT_DIR$/timeBuilding.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,8 +64,8 @@
       <file leaf-file-name="timeBuilding.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/timeBuilding.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="212" column="52" lean-forward="true" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="52" />
+            <state relative-caret-position="437">
+              <caret line="228" column="7" lean-forward="false" selection-start-line="228" selection-start-column="7" selection-end-line="228" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -495,7 +477,7 @@
       <workItem from="1506267557350" duration="1858000" />
       <workItem from="1507144598444" duration="745000" />
       <workItem from="1507730482271" duration="961000" />
-      <workItem from="1507734609433" duration="7451000" />
+      <workItem from="1507734609433" duration="7801000" />
     </task>
     <task id="LOCAL-00001" summary="One">
       <created>1505756643252</created>
@@ -553,11 +535,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507750704879</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="4.6">
+      <created>1507751243776</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1507751243776</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34905000" />
+    <option name="totallyTimeSpent" value="35255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -609,7 +598,8 @@
     <MESSAGE value="version 4.3" />
     <MESSAGE value="version 4.4 &#10;ppl aptl" />
     <MESSAGE value="version 4.5 formations all finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 4.5 formations all finished" />
+    <MESSAGE value="4.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1750,8 +1740,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/timeBuilding.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="212" column="52" lean-forward="true" selection-start-line="212" selection-start-column="52" selection-end-line="212" selection-end-column="52" />
+        <state relative-caret-position="437">
+          <caret line="228" column="7" lean-forward="false" selection-start-line="228" selection-start-column="7" selection-end-line="228" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
