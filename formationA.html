@@ -56,15 +56,7 @@
             font-size: 16px;
             padding: 16px 32px;
         }
-
-    </style>
-    <style>
-        @import url(https://fonts.googleapis.com/css?family=Raleway);
-        .content {
-            width: 365px;
-        }
-
-        .content .content-overlay {
+        .cont .content-overlay {
             background: rgba(0,0,0,0.7);
             position: absolute;
             height: 99%;
@@ -79,10 +71,16 @@
             transition: all 0.4s ease-in-out 0s;
         }
 
-        .content:hover .content-overlay{
+        .cont:hover .content-overlay{
             opacity: 1;
         }
 
+    </style>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+        .content {
+            width: 365px;
+        }
         .content-details {
             position: absolute;
             text-align: center;
@@ -104,6 +102,7 @@
             top: 50%;
             left: 50%;
             opacity: 1;
+            background-color: #0b0b0b;
         }
 
         .content-details h3{
@@ -122,13 +121,35 @@
         .fadeIn-left{
             left: 20%;
         }
+
     </style>
 
-    <link rel="stylesheet" type="text/css" href="menu.css"/>
-    <script type="application/javascript" src="menu.js"></script>
-    <link rel="stylesheet" type="text/css" href="menu-skin/skin.css"/>
-    <link rel="stylesheet" type="text/css" href="icon/icon.css"/>
-    <link rel="stylesheet" type="text/css" href="main/main.css"/>
+    <!--nav-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="drop.css">
+    <!--nav-->
+
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: relative;
+            background-color: transparent;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+
 </head>
 
 <body class="wrapper" style="
@@ -157,62 +178,49 @@
                 </div>
                 <!-- Menu Area Start -->
                 <div class="col-sm-10 col-xs-12">
-                    <div class="main_menu_area">
-                        <div class="mainmenu">
-                            <ul class="Menu -horizontal">
-                                <li class="current_page_item"><a href="#home">Accueil</a></li>
-
-                                <li class="-hasSubmenu">
-                                    <a href="#">A propos</a>
-                                    <ul>
-                                        <li><a href="politique.html">Politique de l’ecole </a></li>
-                                        <li><a href="charte.html">Charte Qualité </a></li>
-                                        <li><a href="moyens.html">Moyens Pédagogiques </a></li>
-                                        <li><a href="#">Implantations</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="-hasSubmenu">
-                                    <a href="#">Formation</a>
-                                    <ul>
-                                        <li><a href="formationA.html">Formation Aeronautique </a></li>
-                                        <li><a href="recyclage.html">Recyclage</a></li>
-                                        <li><a href="anglais.html">Anglais Aéronautique  </a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="-hasSubmenu">
-                                    <a href="#">Cours</a>
-                                    <ul>
-                                        <li class="-hasSubmenu">
-                                            <a href="#">MFS E-Learning </a>
-                                            <ul>
-                                                <li><a href="">E-learning Profile </a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="-hasSubmenu">
-                                    <a href="#">Evénements</a>
-                                    <ul>
-                                        <li><a href="calendar.html">Calendrier d’événnements </a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="-hasSubmenu">
-                                    <a href="#">Membres</a>
-                                    <ul>
-                                        <li><a href="formationA.html">Accès parents </a></li>
-                                        <li><a href="recyclage.html">Accès étudiant</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="#footer">Contact</a></li>
-                                <li><a href="#blog">Inscrivez-vous</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <!--start nav -->
+                    <nav id="primary_nav_wrap">
+                        <ul>
+                            <li class="current-menu-item"><a href="index-agency.html">Accueil</a></li>
+                            <li><a href="#">A propos</a>
+                                <ul>
+                                    <li><a href="politique.html">Politique de l’ecole</a></li>
+                                    <li><a href="charte.html">Charte Qualité</a></li>
+                                    <li><a href="moyens.html">Moyens Pédagogiques </a></li>
+                                    <li><a href="#">Implantations</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">formations</a>
+                                <ul>
+                                    <li class="current-menu-item"><a href="formationA.html">Formation Aeronautique</a></li>
+                                    <li><a href="recyclage.html">Recyclage</a></li>
+                                    <li><a href="anglais.html">Anglais Aéronautique</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">cours</a>
+                                <ul>
+                                    <li class="dir"><a href="#">MFS E-Learning</a>
+                                        <ul>
+                                            <li><a href="#">E-learning Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Evénements</a>
+                                <ul>
+                                    <li><a href="calendar.html">Calendrier d’événnements</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Membres</a>
+                                <ul>
+                                    <li><a href="#">Accès parents</a></li>
+                                    <li><a href="#">Accès étudiants</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Inscrivez-vous</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <!--end nav-->
             </div>
@@ -251,8 +259,22 @@
             <div class="col-xs-12">
                 <!-- Section Heading Start -->
                 <div class="section_heading">
-                    <h3>Formation Aeronautique</h3>
-                    <h4>Formation de Base </h4>
+                    <h3>Formation Aeronautique</h3><br><br>
+                    <div align="center">
+                        <button style="box-shadow: 3px 2px 3px rgba(0, 0, 0, 0);background-color: transparent;" class="btn btn-default filter-button" data-filter="all" style="box-shadow: 3px 2px 3px rgba(0, 0, 0, 0);background-color: transparent;">Toutes</button>
+
+                        <div class="dropdown">
+                            <button style="box-shadow: 3px 2px 3px rgba(0, 0, 0, 0);background-color: transparent;" class="btn btn-outline-secondary">Formation pilote</button>
+                            <div class="dropdown-content">
+                                <button style="box-shadow: 3px 2px 3px rgba(0, 0, 0, 0);background-color: transparent;" class="btn btn-outline-secondary filter-button" data-filter="hdpe" style="display: inline-block;  background-color: Transparent; outline:none;">Formation de base</button>
+                                <button style="box-shadow: 3px 2px 3px rgba(0, 0, 0, 0);background-color: transparent;" class="btn btn-outline-secondary filter-button" data-filter="sprinkle" style="display: inline-block; background-color: Transparent; outline:none;">Formation supplémentaire</button>
+                                <button style="box-shadow: 3px 2px 3px rgba(0, 0, 0, 0);background-color: transparent;" class="btn btn-outline-secondary filter-button" data-filter="spray" style="display: inline-block; background-color: Transparent; outline:none;">Qualif</button>
+                                <!-- <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>-->
+                            </div>
+                        </div>
+                        <button style="box-shadow: 3px 2px 3px rgba(0, 0, 0, 0);background-color: transparent;" class="btn btn-outline-secondary filter-button" data-filter="na" style="display: inline-block;  background-color: Transparent; outline:none;">Navigation Aérienne </button>
+                        <button style="box-shadow: 3px 2px 3px rgba(0, 0, 0, 0);background-color: transparent;" class="btn btn-outline-secondary filter-button" data-filter="m" style="display: inline-block; background-color: Transparent; outline:none;">Météorologie </button>
+                    </div>
 
                 </div>
             </div>
@@ -262,16 +284,8 @@
             <!-- single latest news area start -->
             <div class="container">
                 <div class="row">
-                    <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h1 class="gallery-title">Formation pilote</h1>
-                    </div>
 
-                    <div align="center">
-                       <!-- <button class="btn btn-default filter-button" data-filter="all">Toutes</button>-->
-                        <button class="btn btn-outline-secondary filter-button" data-filter="hdpe" style="display: inline-block;  background-color: Transparent; outline:none;">Formation de base</button>
-                        <button class="btn btn-outline-secondary filter-button" data-filter="sprinkle" style="display: inline-block; background-color: Transparent; outline:none;">Formation supplémentaire</button>
-                        <button class="btn btn-outline-secondary filter-button" data-filter="spray" style="display: inline-block; background-color: Transparent; outline:none;">Qualif</button>
-                       <!-- <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>-->                    </div>
+
                     <br/>
 
                     <!-- single latest news area start -->
@@ -279,147 +293,281 @@
                         <div class="cont single_latest_news_area wow fadeInUp item">
                             <!-- single latest news thumb -->
                             <div class="single_latest_news_img_area">
+                                <div class="content-overlay"></div>
                                 <img src="img/formation/1.jpg" alt="" class="im" >
                                 <!-- single latest news published date -->
-                                <div class="middle">
-                                    <div class="text">ATPL intégré : Airline Transport Pilot License <br>ATPL intégré : Airline Transport Pilot License</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- single latest news area start -->
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
-                        <div class="cont single_latest_news_area wow fadeInUp item">
-                            <!-- single latest news thumb -->
-                            <div class="single_latest_news_img_area">
-                                <img src="img/formation/11.jpg" alt="" class="im" >
-                                <!-- single latest news published date -->
-                                <div class="middle">
-                                    <div class="text">ATPL intégré : Airline Transport Pilot License <br>ATPL intégré : Airline Transport Pilot License</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- single latest news area start -->
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
-                        <div class="cont single_latest_news_area wow fadeInUp item">
-                            <!-- single latest news thumb -->
-                            <div class="single_latest_news_img_area">
-                                <img src="img/formation/2.jpg" alt="" class="im" >
-                                <!-- single latest news published date -->
-                                <div class="middle">
-                                    <div class="text">ATPL intégré : Airline Transport Pilot License <br>ATPL intégré : Airline Transport Pilot License</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- single latest news area start -->
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
-                        <div class="cont single_latest_news_area wow fadeInUp item">
-                            <!-- single latest news thumb -->
-                            <div class="single_latest_news_img_area">
-                                <img src="img/formation/12.jpg" alt="" class="im" >
-                                <!-- single latest news published date -->
-                                <div class="middle">
-                                    <div class="text">ATPL intégré : Airline Transport Pilot License <br>ATPL intégré : Airline Transport Pilot License</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- single latest news area start -->
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter spray">
-                        <div class="cont single_latest_news_area wow fadeInUp item">
-                            <!-- single latest news thumb -->
-                            <div class="single_latest_news_img_area">
-                                <img src="img/formation/111.jpg" alt="" class="im" >
-                                <!-- single latest news published date -->
-                                <div class="middle">
-                                    <div class="text">ATPL intégré : Airline Transport Pilot License <br>ATPL intégré : Airline Transport Pilot License</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- single latest news area start -->
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
-                        <div class="cont single_latest_news_area wow fadeInUp item ">
-                            <!-- single latest news thumb -->
-                            <div class="single_latest_news_img_area">
-                                <img src="img/formation/13.jpg" alt="" class="im" >
-                                <!-- single latest news published date -->
-                                <div class="middle">
-                                    <div class="text">ATPL intégré : Airline Transport Pilot License <br>ATPL intégré : Airline Transport Pilot License</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- single latest news area start -->
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter spray">
-                        <div class="cont single_latest_news_area wow fadeInUp item">
-                            <!-- single latest news thumb -->
-                            <div class="single_latest_news_img_area">
-                                <img src="img/formation/111.jpg" alt="" class="im" >
-                                <!-- single latest news published date -->
-                                <div class="middle">
-                                    <div class="text">ATPL intégré : Airline Transport Pilot License <br>ATPL intégré : Airline Transport Pilot License</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- single latest news area start -->
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
-                        <div class="cont single_latest_news_area wow fadeInUp item">
-                            <!-- single latest news thumb -->
-                            <div class="single_latest_news_img_area">
-                                <img src="img/formation/14.jpg" alt="" class="im" >
-                                <!-- single latest news published date -->
-                                <div class="middle">
-                                    <div class="text">ATPL intégré : Airline Transport Pilot License <br>ATPL intégré : Airline Transport Pilot License</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- single latest news area start -->
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
-                        <div class="cont single_latest_news_area wow fadeInUp item">
-                            <!-- single latest news thumb -->
-                            <div class="single_latest_news_img_area">
-                                <div class=" ">
-                                    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
-                                        <div class="content-overlay"></div>
-                                <img src="img/formation/3.jpg" alt="" class="im" >
-                                <!-- single latest news published date -->
                                         <div class="content-details fadeIn-left">
-                                            <h3>CPL : Commercial Pilot License</h3>
-                                            <p>La licence de pilote commercial (Commercial Pilot License CPL)</p>
+                                            <div class="middle">
+                                                <div class="text">
+                                                    <h3>ATPL intégré : Airline Transport Pilot License</h3>
+                                                    <p>La licence de pilote de ligne, ou Airline Transport</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </a>
                         </div>
-                    </div>
+                        </div></div>
+                    <!-- single latest news area start -->
+                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                            <div class="cont single_latest_news_area wow fadeInUp item">
+                                <!-- single latest news thumb -->
+                                <div class="single_latest_news_img_area">
+                                    <div class="content-overlay"></div>
+                                    <img src="img/formation/11.jpg" alt="" class="im" >
+                                    <!-- single latest news published date -->
+                                    <div class="content-details fadeIn-left">
+                                        <div class="middle">
+                                            <div class="text">
+                                                <h3>COMPLEMENT DE FORMATION ATPL, CPL, IR</h3>
+                                                <p>Une formation qui n’est pas « intégrée »</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div></div>
+                    <!-- single latest news area start -->
+                            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
+                                <div class="cont single_latest_news_area wow fadeInUp item">
+                                    <!-- single latest news thumb -->
+                                    <div class="single_latest_news_img_area">
+                                        <div class="content-overlay"></div>
+                                        <img src="img/formation/2.jpg" alt="" class="im" >
+                                        <!-- single latest news published date -->
+                                        <div class="content-details fadeIn-left">
+                                            <div class="middle">
+                                                <div class="text">
+                                                    <h3>PPL : Private Pilot Licence</h3>
+                                                    <p>Cette licence (Private Pilot Licence, ou PPL) permet d’exercer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div></div>
 
+                     <!-- single latest news area start -->
+                                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                                    <div class="cont single_latest_news_area wow fadeInUp item">
+                                        <!-- single latest news thumb -->
+                                        <div class="single_latest_news_img_area">
+                                            <div class="content-overlay"></div>
+                                            <img src="img/formation/12.jpg" alt="" class="im" >
+                                            <!-- single latest news published date -->
+                                            <div class="content-details fadeIn-left">
+                                                <div class="middle">
+                                                    <div class="text">
+                                                        <h3>MAINTIEN DE COMPETENCE</h3>
+                                                        <p>En mettant l’expérience de ses instructeurs entre vos mains</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div></div>
 
+                        <!-- single latest news area start -->
+                                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter spray">
+                                        <div class="cont single_latest_news_area wow fadeInUp item">
+                                            <!-- single latest news thumb -->
+                                            <div class="single_latest_news_img_area">
+                                                <div class="content-overlay"></div>
+                                                <img src="img/formation/111.jpg" alt="" class="im" >
+                                                <!-- single latest news published date -->
+                                                <div class="content-details fadeIn-left">
+                                                    <div class="middle">
+                                                        <div class="text">
+                                                            <h3>QUALIF DE CLASSE (QC)</h3>
+                                                            <p>Le titulaire d’une licence de pilote d’avion ne doit</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                            </div>
+                                        </div></div>
 
+                        <!-- single latest news area start -->
+                                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                                            <div class="cont single_latest_news_area wow fadeInUp item">
+                                                <!-- single latest news thumb -->
+                                                <div class="single_latest_news_img_area">
+                                                    <div class="content-overlay"></div>
+                                                    <img src="img/formation/13.jpg" alt="" class="im" >
+                                                    <!-- single latest news published date -->
+                                                    <div class="content-details fadeIn-left">
+                                                        <div class="middle">
+                                                            <div class="text">
+                                                                <h3>VOL DE MÛRISSEMENT (TIME BUILDING)</h3>
+                                                                <p>Le time building est une passerelle idéale pour une</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                            </div></div>
 
-</div>
-    </div>
+                                            <!-- single latest news area start -->
+                                            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter spray">
+                                                <div class="cont single_latest_news_area wow fadeInUp item">
+                                                    <!-- single latest news thumb -->
+                                                    <div class="single_latest_news_img_area">
+                                                        <div class="content-overlay"></div>
+                                                        <img src="img/formation/13.jpg" alt="" class="im" >
+                                                        <!-- single latest news published date -->
+                                                        <div class="content-details fadeIn-left">
+                                                            <div class="middle">
+                                                                <div class="text">
+                                                                    <h3>QUALIF INSTRUCTEUR (FI, IRI, CRI)</h3>
+                                                                    <p>En Tunisie être instructeur prévoit une qualification à part </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                                </div></div>
+
+                                                <!-- single latest news area start -->
+                                                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                                                    <div class="cont single_latest_news_area wow fadeInUp item">
+                                                        <!-- single latest news thumb -->
+                                                        <div class="single_latest_news_img_area">
+                                                            <div class="content-overlay"></div>
+                                                            <img src="img/formation/14.jpg" alt="" class="im" >
+                                                            <!-- single latest news published date -->
+                                                            <div class="content-details fadeIn-left">
+                                                                <div class="middle">
+                                                                    <div class="text">
+                                                                        <h3>PROROGATION ET RENOUVELLEMENT DES LICENCES</h3>
+                                                                        <p>Mediterranean Flight School s’occupe de vos Prorogations ou Renouvellements de vos Licences de</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </a>
+                                                        </div>
+                                                    </div></div>
+
+                                                    <!-- single latest news area start -->
+                                                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
+                                                        <div class="cont single_latest_news_area wow fadeInUp item">
+                                                            <!-- single latest news thumb -->
+                                                            <div class="single_latest_news_img_area">
+                                                                <div class="content-overlay"></div>
+                                                                <img src="img/formation/3.jpg" alt="" class="im" >
+                                                                <!-- single latest news published date -->
+                                                                <div class="content-details fadeIn-left">
+                                                                    <div class="middle">
+                                                                        <div class="text">
+                                                                            <h3>CPL : Commercial Pilot License</h3>
+                                                                            <p>La licence de pilote commercial (Commercial Pilot License CPL)</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                </a>
+                                                            </div>
+                                                        </div></div>
+
+                                                        <!-- single latest news area start -->
+                                                        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter spray">
+                                                            <div class="cont single_latest_news_area wow fadeInUp item">
+                                                                <!-- single latest news thumb -->
+                                                                <div class="single_latest_news_img_area">
+                                                                    <div class="content-overlay"></div>
+                                                                    <img src="img/formation/111.jpg" alt="" class="im" >
+                                                                    <!-- single latest news published date -->
+                                                                    <div class="content-details fadeIn-left">
+                                                                        <div class="middle">
+                                                                            <div class="text">
+                                                                                <h3>QUALIFICATION TYPE (QT)</h3>
+                                                                                <p>Une qualification de type d’avion est établie pour :</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div></div>
+
+                                                            <!-- single latest news area start -->
+                                                            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter sprinkle">
+                                                                <div class="cont single_latest_news_area wow fadeInUp item">
+                                                                    <!-- single latest news thumb -->
+                                                                    <div class="single_latest_news_img_area">
+                                                                        <div class="content-overlay"></div>
+                                                                        <img src="img/formation/15.jpg" alt="" class="im" >
+                                                                        <!-- single latest news published date -->
+                                                                        <div class="content-details fadeIn-left">
+                                                                            <div class="middle">
+                                                                                <div class="text">
+                                                                                    <h3>MULTI CREW COORDINATION (MCC)</h3>
+                                                                                    <p>La formation au travail en équipage est dispensée dans</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div></div>
+
+                                                                <!-- single latest news area start -->
+                                                            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6  content filter hdpe">
+                                                                <div class="cont single_latest_news_area wow fadeInUp item">
+                                                                    <!-- single latest news thumb -->
+                                                                    <div class="single_latest_news_img_area">
+                                                                        <div class="content-overlay"></div>
+                                                                        <img src="img/formation/4.jpg" alt="" class="im" >
+                                                                        <!-- single latest news published date -->
+                                                                        <div class="content-details fadeIn-left">
+                                                                            <div class="middle">
+                                                                                <div class="text">
+                                                                                    <h3>IR : Instrument Rating</h3>
+                                                                                    <p>Cette formation prépare aux techniques du vol sans visibilité,</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div></div>
+                    <!-- single latest news area start -->
+                    <div class="gallery_product col-lg-1 col-md-2 col-sm-1 col-xs-2  content filter na">
+                        <div class="cont single_latest_news_area wow fadeInUp item">
+                            <!-- single latest news thumb -->
+                            <div class="single_latest_news_img_area">
+                                <div class="content-overlay"></div>
+                                <img src="img/formation/n.jpg" alt="" class="im" >
+                                <!-- single latest news published date -->
+                                <div class="content-details fadeIn-left">
+                                    <div class="middle">
+                                        <div class="text">
+                                            <h3>Navigation Aérienne</h3>
+                                            <p>CONTRÔLEUR NAVIGATION AÉRIENNE AGENT D’EXPLOITATION NAVIGATION AÉRIENNE ELECTRONICIEN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div></div>
+                    <!-- single latest news area start -->
+                    <div class="gallery_product col-lg-1 col-md-2 col-sm-1 col-xs-2  content filter m">
+                        <div class="cont single_latest_news_area wow fadeInUp item">
+                            <!-- single latest news thumb -->
+                            <div class="single_latest_news_img_area">
+                                <div class="content-overlay"></div>
+                                <img src="img/formation/m.jpg" alt="" class="im" >
+                                <!-- single latest news published date -->
+                                <div class="content-details fadeIn-left">
+                                    <div class="middle">
+                                        <div class="text">
+                                            <h3>Météorologie</h3>
+                                            <p>INGÉNIEUR AGENT METEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div></div>
+
+                </div></div></div></div>
+
 </section>
 <!-- >>>>>>>>>>>>>>>> End Single Blog Post Area <<<<<<<<<<<<<<<< -->
-
-<!-- >>>>>>>>>>>>>>>> Footer Area Start <<<<<<<<<<<<<<<< -->
 <section id="footer" class="footer_widget">
     <div class="video_overlay">
         <div class="container">
