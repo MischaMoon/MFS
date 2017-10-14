@@ -107,7 +107,8 @@
 
 .footer_subcribs_area .submit_btn {
     background: #093f74;
-    border: 0px solid  color: #FFFFFF;;
+    border: 0px solid;
+    color: #FFFFFF;;
     color: #333;
     padding: 5px 10px;
     border-radius: 0px;
