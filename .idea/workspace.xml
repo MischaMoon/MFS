@@ -3,37 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="040da1db-1367-48ed-9ffa-ff5c3f728707" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anglais.html" afterPath="$PROJECT_DIR$/anglais.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atpl.html" afterPath="$PROJECT_DIR$/atpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calendar.html" afterPath="$PROJECT_DIR$/calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/charte.html" afterPath="$PROJECT_DIR$/charte.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/complementFormaton.html" afterPath="$PROJECT_DIR$/complementFormaton.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cpl.html" afterPath="$PROJECT_DIR$/cpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firstAidTraining.html" afterPath="$PROJECT_DIR$/firstAidTraining.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formationA.html" afterPath="$PROJECT_DIR$/formationA.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formationFacteurH.html" afterPath="$PROJECT_DIR$/formationFacteurH.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formationLegislationAr.html" afterPath="$PROJECT_DIR$/formationLegislationAr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/formationMarchandiseDan.html" afterPath="$PROJECT_DIR$/formationMarchandiseDan.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen-fam-airbus.html" afterPath="$PROJECT_DIR$/gen-fam-airbus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-agency.html" afterPath="$PROJECT_DIR$/index-agency.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ir.html" afterPath="$PROJECT_DIR$/ir.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maintenance.html" afterPath="$PROJECT_DIR$/maintenance.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/marsheling.html" afterPath="$PROJECT_DIR$/marsheling.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mcc.html" afterPath="$PROJECT_DIR$/mcc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meteorologue.html" afterPath="$PROJECT_DIR$/meteorologue.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moyens.html" afterPath="$PROJECT_DIR$/moyens.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navgationAr.html" afterPath="$PROJECT_DIR$/navgationAr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/politique.html" afterPath="$PROJECT_DIR$/politique.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ppl.html" afterPath="$PROJECT_DIR$/ppl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/propagationRenv.html" afterPath="$PROJECT_DIR$/propagationRenv.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qc.html" afterPath="$PROJECT_DIR$/qc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qi.html" afterPath="$PROJECT_DIR$/qi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qt.html" afterPath="$PROJECT_DIR$/qt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recyclage.html" afterPath="$PROJECT_DIR$/recyclage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smsEnAero.html" afterPath="$PROJECT_DIR$/smsEnAero.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sslia.html" afterPath="$PROJECT_DIR$/sslia.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timeBuilding.html" afterPath="$PROJECT_DIR$/timeBuilding.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -405,7 +374,7 @@
       <workItem from="1507892784605" duration="604000" />
       <workItem from="1507917111252" duration="2073000" />
       <workItem from="1508005665105" duration="17559000" />
-      <workItem from="1508097970877" duration="966000" />
+      <workItem from="1508097970877" duration="1011000" />
     </task>
     <task id="LOCAL-00001" summary="One">
       <created>1505756643252</created>
@@ -519,11 +488,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508028534534</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="6.1">
+      <created>1508098982019</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1508098982019</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60536000" />
+    <option name="totallyTimeSpent" value="60581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -613,7 +589,8 @@
     <MESSAGE value="&#10;5 Prefinal" />
     <MESSAGE value="&#10;5.1&#10; Prefinal" />
     <MESSAGE value="6 final" />
-    <option name="LAST_COMMIT_MESSAGE" value="6 final" />
+    <MESSAGE value="6.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
