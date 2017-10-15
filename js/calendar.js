@@ -14,18 +14,18 @@ var CalendarBasic = {
             events: [{
                 title: "All Day Event",
                 start: t + "-01",
-                description: "Lorem ipsum dolor sit incid idunt ut",
+                description: "",
                 className: "m-fc-event--danger m-fc-event--solid-warning"
             }, {
                 title: "Reporting",
                 start: t + "-14T13:30:00",
-                description: "Lorem ipsum dolor incid idunt ut labore",
+                description: "",
                 end: t + "-14",
                 className: "m-fc-event--accent"
             }, {
                 title: "Company Trip",
                 start: t + "-02",
-                description: "Lorem ipsum dolor sit tempor incid",
+                description: "",
                 end: t + "-03",
                 className: "m-fc-event--primary"
             }, {
@@ -91,7 +91,7 @@ var CalendarBasic = {
                 url: "http://google.com/",
                 start: t + "-28",
                 className: "m-fc-event--solid-info m-fc-event--light",
-                description: "Lorem ipsum dolor sit amet, labore"
+                description: ""
             }],
             eventRender: function (e, t) {
                 t.hasClass("fc-day-grid-event") ? (t.data("content", e.description), t.data("placement", "top")) : t.hasClass("fc-time-grid-event") ? t.find(".fc-title").append('<div class="fc-description">' + e.description + "</div>") : 0 !== t.find(".fc-list-item-title").lenght && t.find(".fc-list-item-title").append('<div class="fc-description">' + e.description + "</div>")
