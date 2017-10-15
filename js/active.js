@@ -209,10 +209,12 @@
         if ($window.scrollTop() > 90) {
             $('.main_header_area').addClass('sticky fadeIn');
             $('body').addClass('mobile_menu_on fullmenu-on');
+            $(".logo_area img").attr("src", "img/core-img/agency-logo.png")
 
         } else {
             $('.main_header_area').removeClass('sticky fadeIn');
             $('body').removeClass('mobile_menu_on fullmenu-on');
+            $(".logo_area img").attr("src", "img/core-img/agency-logo-white.png")
         }
     });
 
